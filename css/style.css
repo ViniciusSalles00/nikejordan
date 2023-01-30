@@ -1,0 +1,32 @@
+@import url(/css/menu.css);
+@import url(/css/section1.css);
+@import url(/css/footer.css);
+@import url(/css/section2.css);
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-base: #afb6c2;
+  --text-terms: #40403F;
+  --background: #191816;
+  --form-background: #640026;
+  --primary-color: #ffc632;
+  --nav-color:#99221C;
+  --background-white: #B1C3CC;
+  --rodape:#9BABB3;
+  --text-button:#FF013C;
+  --text-nav :#ffffff 
+}
+
+
+body {
+  font-family: 'Bebas Neue', cursive;
+ background-color: var(--background-white);
+ justify-content: center;
+}
+
+

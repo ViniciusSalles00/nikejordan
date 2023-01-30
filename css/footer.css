@@ -1,0 +1,52 @@
+.rodape {
+  
+    box-sizing: border-box;
+    display: grid;
+    justify-items: center;
+    background-color: var(--rodape);
+    padding: 2.5rem;
+    gap: 2.5rem;
+  }
+  
+  .icon-rodape img {
+    display: block;
+    height: 1.875rem;
+  }
+  
+  .icon-rodape {
+    margin-top: 0.625rem;
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .termos {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  
+  }
+  
+  .termos :hover {
+    color: var(--text-nav);
+  }
+  
+  @media (max-width: 350px)
+  {
+    .rodape {
+      gap: 1.875rem;
+    }
+
+    .icon-rodape img  {
+      height: 0.938rem;
+    }
+
+    .termos a {
+      font-size: 0.875rem;
+    }
+
+
+    footer p {
+      font-size: 1rem;
+    }
+  }
+  
