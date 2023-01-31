@@ -25,4 +25,448 @@ body {
  justify-content: center;
 }
 
+nav{
+    background-color: var(--text-button );
+    height: 3.125rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .titulo {
+    font-size: 2.188rem;
+  }
+  
+  nav ul  {
+    display: flex;
+    gap: 2.5rem;
+    color: var(--text-base);
+    list-style: none;
+  }
+
+  
+  ul a {
+    font-size: 0.938rem;
+    font-weight: 600 ;
+    text-decoration: none;
+    color: var(--background);
+    font-family:monospace
+  }
+  
+  .navegacao :hover {
+    color: var(--text-nav)
+  }
+
+  .jordanlogo {
+    display: block;
+    max-width: 100%;
+    height: 2.5rem;
+    position: absolute;
+    left: 18.75rem;
+  }
+
+
+
+  @media (max-width: 1900px)
+  {
+    .jordanlogo
+     {
+      display: none;
+     }
+  }
+
+
+  
+
+
+  @media (max-width: 700px)
+  {
+    nav ul {
+      flex-direction: column;
+      gap: 0.625rem;
+      
+    }
+    nav {
+      box-sizing: border-box;
+      height: 8.125rem;
+    }
+    .titulo {
+      font-size: 1.875rem;
+    }
+    nav ul  {
+      text-align: center;
+    }
+
+  }
+
+
+.tenis {
+    display: block;
+    margin-top: 5.625rem;
+    max-width: 100%;
+    }
+
+    .secao1 img {
+      max-width: 100%;
+    }
+    
+    .secao1 {
+        margin-top: 8.75rem;
+        display: grid;
+        grid-template-columns: 700px 900px;
+      }
+      
+      .desc-secao1 {
+      display: grid;
+      gap: 1.25;
+      justify-items: left;
+      }
+      
+      .desc-secao1 h2 {
+        font-size: 5.62vh;
+        display: grid;
+        align-items: end;
+      }
+      
+      .desc-secao1 p {
+        font-size: 1.27vw;
+        font-family: 'Bebas Neue', cursive;
+        font-family: 'Mulish', sans-serif;;
+      }
+      
+      .paragrafo {
+        position: relative;
+      }
+      
+      .desc-secao1 {
+        text-align: left;
+        display: grid;
+      }
+      
+      .desc-button {
+        padding: 0.938rem  1.25rem;
+        margin: 0px;
+        align-self: center;
+        background-color: var(--nav-color);
+        text-decoration: none;
+        color: var(--text-title);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 0.313rem;
+        position: absolute;
+        top: 36.25rem;
+      }
+      
+      .desc-button :hover {
+        color: var(--background-white);
+        background-color: var(--form-background);
+      
+      }
+
+
+
+      button a {
+        text-decoration: none;
+        color: var(--text-nav);
+      }
+
+      button, button::after {
+        width: 11.25rem;
+        height: 4.813rem;
+        font-size: 1.625rem;
+        font-family: 'Bebas Neue', cursive;
+        background: linear-gradient(45deg, transparent 5%, var(--text-button) 5%);
+        border: 0;
+        color: #fff;
+        letter-spacing: 0.188rem;
+        line-height: 5.5rem;
+        box-shadow: 6px 0px 0px #00E6F6;
+        outline: transparent;
+        position: relative;
+      }
+      
+      button::after {
+        --slice-0: inset(50% 50% 50% 50%);
+        --slice-1: inset(80% -6px 0 0);
+        --slice-2: inset(50% -6px 30% 0);
+        --slice-3: inset(10% -6px 85% 0);
+        --slice-4: inset(40% -6px 43% 0);
+        --slice-5: inset(80% -6px 5% 0);
+        
+        content: 'Saiba Mais';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+        text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+        clip-path: var(--slice-0);
+      }
+      
+      button:hover::after {
+        animation: 1s glitch;
+        animation-timing-function: steps(2, end);
+      }
+      
+      @keyframes glitch {
+        0% {
+          clip-path: var(--slice-1);
+          transform: translate(-20px, -10px);
+        }
+        10% {
+          clip-path: var(--slice-3);
+          transform: translate(10px, 10px);
+        }
+        20% {
+          clip-path: var(--slice-1);
+          transform: translate(-10px, 10px);
+        }
+        30% {
+          clip-path: var(--slice-3);
+          transform: translate(0px, 5px);
+        }
+        40% {
+          clip-path: var(--slice-2);
+          transform: translate(-5px, 0px);
+        }
+        50% {
+          clip-path: var(--slice-3);
+          transform: translate(5px, 0px);
+        }
+        60% {
+          clip-path: var(--slice-4);
+          transform: translate(5px, 10px);
+        }
+        70% {
+          clip-path: var(--slice-2);
+          transform: translate(-10px, 10px);
+        }
+        80% {
+          clip-path: var(--slice-5);
+          transform: translate(20px, -10px);
+        }
+        90% {
+          clip-path: var(--slice-1);
+          transform: translate(-10px, 0px);
+        }
+        100% {
+          clip-path: var(--slice-1);
+          transform: translate(0);
+        }
+      }
+    
+
+      @media (max-width: 700px) {
+
+        .secao1 {
+          display: grid;
+          gap: 3.125rem;
+          margin: 0px;
+          grid-template-columns: 1fr;
+         
+        }
+        .tenis {
+          margin-top: 3.75rem;
+          height: 12.5rem;
+          justify-self: center;
+        }
+
+        .desc-secao1 h2 {
+          font-size: 1.5rem;
+          color: var(--nav-color);
+          justify-self: center;
+        }
+
+        .desc-secao1 p {
+          font-size: 1.25rem;
+          padding: 1.25rem;
+        }
+
+        button {
+          font-size: 1.25rem;
+          justify-self: center;
+          
+        }
+      
+      }
+
+      @media (max-width: 700px) {
+        .desc-secao1 p {
+          width: 18.75rem;
+          margin: 1.25rem;
+          word-wrap: break-word;
+        }
+
+        .tenis {
+          width: 18.75rem;
+          height: 17.5rem;
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: 700px) {
+  
+        .desc-secao1 p {
+          margin: auto;
+        }
+
+        
+      }
+
+      @media(max-width: 1650px) {
+        .secao1 {
+          grid-template-columns: 700px 700px
+        }
+      }
+
+
+      @media (max-width: 1460px) {
+
+        .tenis {
+          height: 15.625rem;
+        }
+         
+        .secao1 {
+          grid-template-columns: 500px 650px
+        }
+        }
+
+
+        @media (max-width: 1200px) {
+          .secao1 {
+            grid-template-columns: 37.5rem;
+            margin: auto;
+            justify-content: center;
+          }
+          .desc-secao1 {
+            display: grid;
+            justify-items: center;
+          }
+        }
+
+.respect {
+    margin-top: 9.375rem;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    align-items: center;
+  }
+  
+  .respect h2   {
+  font-size: 5rem;
+  }
+  
+  .respect p {
+    font-size: 1.563rem;
+  }
+  
+  .homem {
+    display: block;
+    height: 43.75rem;
+  }
+
+  @media (max-width: 1460px) {
+    .homem {
+      height: 21.875rem;
+    }
+
+    .respect {
+      grid-template-columns: 500px 650px
+    }
+  }
+
+
+  @media (max-width: 1200px) {
+   
+
+    .respect {
+      grid-template-columns: 300px 450px
+    }
+
+    .respect h2 {
+      font-size: 2.688rem;
+    }
+  }
+
+
+
+  @media (max-width: 700px) {
+    .respect {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 6.25rem;
+      gap: 1.875rem;
+      text-align: center;
+    }
+    .homem {
+      height: 18.75rem;
+      display: block;
+      margin: auto;
+    }
+    .respect h2   {
+      font-size: 4.375rem;
+      margin-bottom: 1.25rem;
+      }
+    .respect p {
+      font-size: 1.563rem;
+      margin-bottom: 2.5rem;
+    }
+
+  }
+
+
+
+.rodape {
+  
+    box-sizing: border-box;
+    display: grid;
+    justify-items: center;
+    background-color: var(--rodape);
+    padding: 2.5rem;
+    gap: 2.5rem;
+  }
+  
+  .icon-rodape img {
+    display: block;
+    height: 1.875rem;
+  }
+  
+  .icon-rodape {
+    margin-top: 0.625rem;
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .termos {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  
+  }
+  
+  .termos :hover {
+    color: var(--text-nav);
+  }
+  
+  @media (max-width: 350px)
+  {
+    .rodape {
+      gap: 1.875rem;
+    }
+
+    .icon-rodape img  {
+      height: 0.938rem;
+    }
+
+    .termos a {
+      font-size: 0.875rem;
+    }
+
+
+    footer p {
+      font-size: 1rem;
+    }
+  }
+
 
