@@ -26,8 +26,6 @@ body {
 }
 
 nav{
-    background-color: var(--text-button );
-    height: 3.125rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
